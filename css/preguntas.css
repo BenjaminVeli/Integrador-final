@@ -1,0 +1,176 @@
+@font-face {
+    font-family: myFont;
+    src: url(mikado.ttf);
+}
+
+body {
+    background-image: url(../img/background-preguntas.jpg);
+}
+
+.correcta {
+    color: green;
+}
+
+.incorrecta {
+    color: red;
+}
+
+.preguntas--container {
+    text-align: center;
+    margin-top: 8rem;
+    margin-bottom: 14rem;
+}
+
+.enunciado-pregunta {
+    background-color: #ffffff;
+    border-radius: 0.5em;
+    border: 3px solid #ffffff50;
+    box-shadow: 2px 5px #00000030;
+    color: #191919;
+    font-size: 1.4em;
+    font-weight: 800;
+    margin-top: 2vh;
+    padding: 0.8em 1.8em;
+    text-shadow: 2px 2px 2px #00000020;
+    text-transform: uppercase;
+    width: 800px;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
+
+.enunciado-alternativa {
+    font-family: sans-serif;
+    background-color: #ffffff;
+    border-radius: 1em;
+    border: 3px solid #ffffff50;
+    box-shadow: 2px 5px #00000030;
+    color: #191919;
+    font-size: 1.1em;
+    font-weight: 800;
+    margin-top: 2vh;
+    padding: 0.3em 1.2em;
+    text-shadow: 2px 2px 2px #00000020;
+    text-transform: uppercase;
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.enunciado-alternativa:hover {
+    background-color: #302d2d50;
+    color: #ffffff;
+}
+
+.radio-hidden {
+    display: none;
+}
+
+.enunciado-alternativa-container {
+    display: flex;
+}
+
+.historial-puntaje-container {
+    border: 4px solid #30475E;
+    width: 1000px;
+    margin: 0 auto;
+    background: #000000;
+    margin-bottom: 2rem;
+    border-radius: 14px;
+    box-shadow: 3px 7px #4d4d4d;
+}
+
+.respuesta-correcta {
+    color: rgb(18, 172, 18);
+    font-family: myFont;
+    font-size: 30px;
+}
+
+.respuesta-incorrecta {
+    color: red;
+    font-family: myFont;
+    font-size: 30px;
+}
+
+.historial-puntaje-txt {
+    font-family: myFont;
+    font-size: 65px;
+    color: #213277;
+}
+
+.puntos-obtenidos {
+    font-family: myFont;
+    color: #fff;
+    font-size: 30px;
+}
+
+.pregunta-txt {
+    color: #2a3e8f;
+    font-size: 35px;
+    font-weight: 800;
+    border-top: 4px solid #30475E;
+}
+
+.alternativas-txt {
+    font-size: 30px;
+    font-weight: 550;
+    color: #F5F5F5;
+    margin-top: 1.5rem;
+}
+
+.alternativa-correcta-txt {
+    font-size: 30px;
+    font-weight: 550;
+    color: #F5F5F5;
+    margin-bottom: 1.5rem;
+}
+
+.button-inicio {
+    font-family: myFont;
+    background-color: #ffffff;
+    border-radius: 1em;
+    border: 3px solid #ffffff50;
+    box-shadow: 2px 5px #00000030;
+    color: #191919;
+    font-size: 1.2em;
+    font-weight: 800;
+    padding: 0.3em 1.2em;
+    margin-top: 1rem;
+    text-shadow: 2px 2px 2px #00000020;
+    text-transform: uppercase;
+    width: 270px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-inicio:hover {
+    background-color: #302d2d50;
+    color: #ffffff;
+}
+
+@media(max-width: 991px) {
+    .enunciado-pregunta {
+        width: 350px;
+        font-size: 1.2em;
+    }
+    .enunciado-alternativa {
+        width: 380px;
+        font-size: 1em;
+    }
+    .historial-puntaje-container {
+        width: 360px;
+    }
+    .historial-puntaje-txt {
+        font-size: 40px;
+    }
+    .pregunta-txt {
+        font-size: 25px;
+    }
+    .puntos-obtenidos {
+        font-size: 25px;
+    }
+    .alternativas-txt {
+        font-size: 25px;
+    }
+}

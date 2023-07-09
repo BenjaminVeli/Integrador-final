@@ -1,0 +1,58 @@
+@font-face {
+    font-family: myFont;
+    src: url(mikado.ttf);
+}
+
+.span--user {
+    color: #fff;
+    font-family: myFont;
+    font-size: 28px;
+}
+
+.container--spin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img--spin {
+    width: 700px;
+}
+
+.img--tectrivia {
+    width: 800px;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.button--spin {
+    background-color: #ff9100;
+    border-radius: 1em;
+    border: 3px solid #ffffff50;
+    box-shadow: 2px 5px #00000030;
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 800;
+    padding: 0.5em 1.5em;
+    text-shadow: 2px 2px 2px #00000020;
+    text-transform: uppercase;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    cursor: pointer;
+}
+
+.button--spin:hover {
+    background-color: #cf7703;
+}
+
+@media (max-width: 991px) {
+    .img--tectrivia {
+        width: 400px;
+    }
+    .img--spin {
+        width: 400px;
+    }
+}
